@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div class="container" style="margin-bottom:200px">
+            <h3> Ví dụ 1: Cho phép người dùng nhập vào 1 số. In ra số thẻ dòng hello vN tương tự</h3>
+            <div class="form-group">
+                <p>Nhập vào 1 số</p>
+                <input type="number" class="form-control mb-2 w-25" id="iSo" />
+                <button class="btn btn-success" id="btnInTheDiv">In thẻ DIV</button>
+            </div>
+        </div>
+        <div id="ketQua1">
+        </div>
+
+
+        <div class="container mt-5" style="margin-bottom:200px">
+            <h3> Ví dụ 2: Cho phép người dùng nhập vào 1 số. Chia hết cho 2 lặp lại cho đến khi giá trị chia bằng 1 rồi
+                dừng</h3>
+            <div class="form-group">
+                <p>Nhập vào 1 số</p>
+                <input type="number" class="form-control mb-2 w-25" id="iSo1" />
+                <button class="btn btn-success" id="btnChiahetCho2">In thẻ DIV</button>
+            </div>
+        </div>
+        <div id="ketQua2">
+        </div>
+
+        <div class="container mt-5" style="margin-bottom:200px">
+            <h3> Ví dụ 3: Cho phép người dùng nhập vào 1 số. xuất giá trị Hello VN ra thẻ div. Bằng vòng lặp do while
+                dừng</h3>
+            <div class="form-group">
+                <p>Nhập vào 1 số</p>
+                <input type="number" class="form-control mb-2 w-25" id="iSo3" />
+                <button class="btn btn-success" id="btnDoWhile">In thẻ DoWhile</button>
+            </div>
+        </div>
+        <div id="ketQua3">
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Tính tổng số nhập vào</label>
+                        <input id="txtNum" type="text" class="form-control" /> <button class="btn btn-success my-2"
+                            onclick="submit()"> Submit
+                        </button>
+                        <div id="noti" class="alert alert-success" style="display: none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <!-- Main JS -->
+    <script src="./js/style.js"></script>
+</body>
+
+</html>
