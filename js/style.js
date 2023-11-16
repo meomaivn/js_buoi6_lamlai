@@ -119,3 +119,57 @@ function submit() {
   document.getElementById("noti").style.display = "block";
   document.getElementById("noti").innerHTML = count;
 }
+/** vòng lặp For
+ * giống cấu trúc while
+ */
+function demoFor() {
+  for (var n = 0; n < 3; n++) {
+    // hành động
+    console.log("hello VN");
+  }
+}
+demoFor();
+
+// Gom số chẵn vào một khu, số lẻ vao một khu
+// function expFor() {
+//   var n = 10;
+//   var soLe = "";
+//   var soChan = "";
+
+//   for (var i = 0; i < n; i++) {
+//     console.log(i);
+//     if (i % 2 === 0) {
+//       soChan += i + " ";
+//     } else {
+//       soLe += i + " ";
+//     }
+//   }
+//   console.log("So chan ", soChan);
+//   console.log("So le ", soLe);
+// }
+// expFor();
+
+// vòng lặp for (UI)
+var i = 0;
+var soLe = "";
+var soChan = "";
+var content = "";
+function chanLeUI(n) {
+  for (var i = 1; i < n; i++) {
+    var n = Number(document.getElementById("iSo4").value);
+    console.log(i);
+    content = "";
+
+    if (i % 2 === 0) {
+      soChan += i + " ";
+    } else {
+      soLe += i + " ";
+    }
+    content = "Số chẵn: " + soChan + "<br> Số lẻ: " + soLe;
+    // document.getElementById("ketQua4").innerHTML = content;
+  }
+}
+document.getElementById("btnForChanLe").onclick = function () {
+  chanLeUI();
+  
+};
